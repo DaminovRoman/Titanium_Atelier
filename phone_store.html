@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Премиальные смартфоны — Titanium Atelier</title>
+  <meta name="description" content="Коллекция премиальных смартфонов, отобранных за дизайн, материалы, инженерные решения и исключительный пользовательский опыт.">
+  <meta name="theme-color" content="#151514">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Titanium Atelier — цифровое ателье технологий">
+  <meta property="og:description" content="Коллекция премиальных смартфонов, отобранных за дизайн, материалы, инженерные решения и ощущение, которое начинается с первого прикосновения.">
+  <meta property="og:image" content="og-cover.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://titanium-atelier.example">
+  <meta property="og:locale" content="ru_RU">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Titanium Atelier — цифровое ателье технологий">
+  <meta name="twitter:description" content="Коллекция премиальных смартфонов, отобранных за дизайн, материалы и инженерные решения.">
+
+  <!-- Preconnect / preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="preload" as="style" href="phone_store.css">
+  <link rel="stylesheet" href="phone_store.css">
+
+  <!-- Schema.org: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Titanium Atelier",
+    "url": "https://titanium-atelier.example",
+    "logo": "https://titanium-atelier.example/logo.svg",
+    "description": "Цифровое ателье премиальных смартфонов: отбор, проверка и консультация перед покупкой.",
+    "sameAs": [
+      "https://t.me/titaniumatelier",
+      "https://wa.me/70000000000"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: Product (пример флагманской позиции коллекции) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Meridian Pro 7",
+    "description": "Смартфон с титановым корпусом, керамическим стеклом и профессиональной оптической системой.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Titanium Atelier"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "RUB",
+      "price": "189000",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!-- Schema.org: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Как проходит отбор устройств в коллекцию?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Каждое устройство проходит визуальную и техническую проверку до того, как попадает в коллекцию и может быть предложено владельцу."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Можно ли увидеть устройство перед покупкой?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да, можно запланировать персональный просмотр в шоуруме или получить консультацию эксперта дистанционно."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Что входит в консультацию эксперта?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Эксперт помогает сравнить модели по реальному сценарию использования, а не только по характеристикам на бумаге."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://titanium-atelier.example"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Коллекция",
+        "item": "https://titanium-atelier.example#collection"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="is-preloading">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- ============ ПРЕЛОАДЕР ============ -->
+  <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Загрузка страницы">
+
+    <div class="preloader-atmosphere" aria-hidden="true"></div>
+
+    <div class="preloader-core">
+      <div class="preloader-aperture-wrap">
+        <svg class="preloader-aperture" width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle class="preloader-aperture-ring" cx="82" cy="82" r="80" stroke="currentColor" stroke-width="0.5"/>
+          <g class="preloader-blades">
+            <path class="preloader-blade" d="M82 82 L82 14 A68 68 0 0 1 141 48 Z"/>
+            <path class="preloader-blade" d="M82 82 L141 48 A68 68 0 0 1 141 116 Z"/>
+            <path class="preloader-blade" d="M82 82 L141 116 A68 68 0 0 1 82 150 Z"/>
+            <path class="preloader-blade" d="M82 82 L82 150 A68 68 0 0 1 23 116 Z"/>
+            <path class="preloader-blade" d="M82 82 L23 116 A68 68 0 0 1 23 48 Z"/>
+            <path class="preloader-blade" d="M82 82 L23 48 A68 68 0 0 1 82 14 Z"/>
+          </g>
+          <circle class="preloader-aperture-tick" cx="82" cy="82" r="61" stroke="currentColor" stroke-width="0.5" stroke-dasharray="0.5 9.5" stroke-linecap="round"/>
+        </svg>
+
+        <svg class="preloader-mark" width="34" height="34" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect class="preloader-mark-outer" x="1" y="1" width="26" height="26" rx="7" stroke="currentColor" stroke-width="1"/>
+          <rect class="preloader-mark-inner" x="9" y="9" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <div class="preloader-word" aria-hidden="true">
+        <span class="preloader-word-line">TITANIUM</span>
+        <span class="preloader-word-line preloader-word-line--accent">ATELIER</span>
+      </div>
+
+      <div class="preloader-meter" aria-hidden="true">
+        <span class="preloader-meter-label">Настройка фокуса</span>
+        <span class="preloader-meter-bar"><span class="preloader-meter-fill" id="preloaderFill"></span></span>
+        <span class="preloader-meter-count"><span id="preloaderCount">00</span><i>%</i></span>
+      </div>
+    </div>
+
+    <span class="sr-only" id="preloaderSrStatus">Идёт загрузка страницы</span>
+  </div>
+
+  <!-- ============ НАВИГАЦИЯ ============ -->
+  <header class="site-header" id="siteHeader">
+    
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="Titanium Atelier — на главную">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="26" height="26" rx="7" stroke="currentColor" stroke-width="1"/>
+            <rect x="9" y="9" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </span>
+        <span class="logo-text">Titanium&nbsp;Atelier</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="#philosophy" class="nav-link" data-nav="philosophy">Философия</a></li>
+          <li><a href="#collection" class="nav-link" data-nav="collection">Коллекция</a></li>
+          <li><a href="#details" class="nav-link" data-nav="details">Детали</a></li>
+          <li><a href="#experience" class="nav-link" data-nav="experience">Шоурум</a></li>
+          <li><a href="#owners" class="nav-link" data-nav="owners">Владельцы</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-ghost header-cta">Консультация</a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Открыть меню"
+        >
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Мобильная навигация">
+      <ul class="mobile-nav-list">
+        <li><a href="#philosophy" class="mobile-nav-link">Философия</a></li>
+        <li><a href="#collection" class="mobile-nav-link">Коллекция</a></li>
+        <li><a href="#details" class="mobile-nav-link">Детали</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Шоурум</a></li>
+        <li><a href="#owners" class="mobile-nav-link">Владельцы</a></li>
+        <li><a href="#booking" class="mobile-nav-link mobile-nav-cta">Получить консультацию</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ 01. HERO ============ -->
+    <section class="hero" id="top" aria-label="Titanium Atelier — вступление">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-surface"></div>
+        <img class="hero-photo" src="img/1.png" alt="Премиальный смартфон Titanium Atelier крупным планом">
+        <div class="hero-scrim"></div>
+        <div class="hero-glow"></div>
+      </div>
+
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal-up" data-reveal-order="1">Titanium Atelier</p>
+
+        <h1 class="hero-title reveal-up" data-reveal-order="3">
+          Технология,<br>которую хочется<br>держать в&nbsp;руках.
+        </h1>
+
+        <p class="hero-subtitle reveal-up" data-reveal-order="4">
+          Коллекция смартфонов, отобранных за дизайн, материалы, инженерные
+          решения и ощущение, которое начинается с первого прикосновения.
+        </p>
+
+        <div class="hero-actions reveal-up" data-reveal-order="5">
+          <a href="#collection" class="btn btn-primary magnetic-btn">Исследовать коллекцию</a>
+          <a href="#booking" class="btn btn-outline magnetic-btn">Получить консультацию</a>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <!-- ============ 02. ФИЛОСОФИЯ ============ -->
+    <section class="philosophy" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="section-inner philosophy-grid">
+        <div class="philosophy-text">
+          <p class="section-label reveal-on-scroll">01 / Философия</p>
+          <h2 class="section-title philosophy-title" id="philosophy-title">
+            <span class="reveal-line">Не каждый смартфон</span>
+            <span class="reveal-line">становится частью</span>
+            <span class="reveal-line">твоего стиля.</span>
+          </h2>
+          <div class="philosophy-body reveal-on-scroll">
+            <p>Мы не стремимся показать сотни моделей.</p>
+            <p>Нас интересуют материалы. Пропорции. Тактильность.
+            Экран. Камера. Инженерные решения.</p>
+            <p>И то, как устройство ощущается каждый день.</p>
+          </div>
+        </div>
+
+        <div class="philosophy-visual reveal-on-scroll parallax-el" data-parallax="0.08">
+          <figure class="macro-frame macro-frame--texture" role="img"
+            aria-label="Крупная фактура титанового корпуса смартфона с направленным светом">
+            <img class="macro-surface macro-surface--brushed" src="img/2.png" alt="Крупная фактура титанового корпуса смартфона с направленным светом">
+            <figcaption class="macro-caption">Текстура титанового корпуса, увеличение ×8</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03. КОЛЛЕКЦИЯ ============ -->
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="section-inner">
+        <div class="collection-intro">
+          <p class="section-label reveal-on-scroll">02 / Коллекция</p>
+          <h2 class="section-title reveal-on-scroll" id="collection-title">Экспозиция текущего сезона</h2>
+        </div>
+
+        <!-- Экспонат 01 -->
+        <article class="exhibit reveal-on-scroll" data-exhibit="1">
+          <div class="exhibit-visual parallax-el" data-parallax="0.05">
+            <figure class="macro-frame macro-frame--device" role="img"
+              aria-label="Смартфон Meridian Pro 7 в графитовом корпусе на каменной поверхности">
+              <div class="device-tilt" data-tilt>
+                <img class="macro-surface macro-surface--device-1" src="img/3.png" alt="Смартфон Meridian Pro 7 в графитовом корпусе на каменной поверхности">
+              </div>
+            </figure>
+          </div>
+          <div class="exhibit-info">
+            <span class="exhibit-index" aria-hidden="true">01</span>
+            <h3 class="exhibit-name">Meridian&nbsp;Pro&nbsp;7</h3>
+            <dl class="exhibit-specs">
+              <div class="spec-row">
+                <dt>Материал корпуса</dt>
+                <dd>Титан класса 5, матовая обработка</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Дисплей</dt>
+                <dd>6,7", LTPO, 1–120 Гц</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Камера</dt>
+                <dd>Тройная оптическая система, 5X зум</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Память</dt>
+                <dd>512 ГБ</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Цена</dt>
+                <dd>189&nbsp;000&nbsp;₽</dd>
+              </div>
+            </dl>
+            <a href="#booking" class="btn btn-outline exhibit-cta magnetic-btn">Изучить устройство</a>
+          </div>
+        </article>
+
+        <!-- Экспонат 02 (зеркальная композиция) -->
+        <article class="exhibit exhibit--reverse reveal-on-scroll" data-exhibit="2">
+          <div class="exhibit-visual parallax-el" data-parallax="0.05">
+            <figure class="macro-frame macro-frame--device" role="img"
+              aria-label="Смартфон Arden Slate в угольном корпусе, крупный план">
+              <div class="device-tilt" data-tilt>
+                <img class="macro-surface macro-surface--device-2" src="img/4.png" alt="Смартфон Arden Slate в угольном корпусе, крупный план">
+              </div>
+            </figure>
+          </div>
+          <div class="exhibit-info">
+            <span class="exhibit-index" aria-hidden="true">02</span>
+            <h3 class="exhibit-name">Arden&nbsp;Slate</h3>
+            <dl class="exhibit-specs">
+              <div class="spec-row">
+                <dt>Материал корпуса</dt>
+                <dd>Анодированный алюминий, стекло Gorilla Armor</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Дисплей</dt>
+                <dd>6,3", OLED, 120 Гц</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Камера</dt>
+                <dd>Двойная система, ночной режим</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Память</dt>
+                <dd>256 ГБ</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Цена</dt>
+                <dd>124&nbsp;000&nbsp;₽</dd>
+              </div>
+            </dl>
+            <a href="#booking" class="btn btn-outline exhibit-cta magnetic-btn">Изучить устройство</a>
+          </div>
+        </article>
+
+        <!-- Экспонат 03 -->
+        <article class="exhibit reveal-on-scroll" data-exhibit="3">
+          <div class="exhibit-visual parallax-el" data-parallax="0.05">
+            <figure class="macro-frame macro-frame--device" role="img"
+              aria-label="Смартфон Lumen Air в цвете тёплый фарфор на архитектурном фоне">
+              <div class="device-tilt" data-tilt>
+                <img class="macro-surface macro-surface--device-3" src="img/5.png" alt="Смартфон Lumen Air в цвете тёплый фарфор на архитектурном фоне">
+              </div>
+            </figure>
+          </div>
+          <div class="exhibit-info">
+            <span class="exhibit-index" aria-hidden="true">03</span>
+            <h3 class="exhibit-name">Lumen&nbsp;Air</h3>
+            <dl class="exhibit-specs">
+              <div class="spec-row">
+                <dt>Материал корпуса</dt>
+                <dd>Керамокомпозит, толщина 6,9 мм</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Дисплей</dt>
+                <dd>6,1", AMOLED, 90 Гц</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Камера</dt>
+                <dd>Одиночный сенсор, вычислительная фотография</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Память</dt>
+                <dd>256 ГБ</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Цена</dt>
+                <dd>98&nbsp;000&nbsp;₽</dd>
+              </div>
+            </dl>
+            <a href="#booking" class="btn btn-outline exhibit-cta magnetic-btn">Изучить устройство</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 04. ДЕТАЛИ ============ -->
+    <section class="details" id="details" aria-labelledby="details-title">
+      <div class="section-inner details-intro">
+        <p class="section-label reveal-on-scroll">03 / Детали</p>
+        <h2 class="section-title reveal-on-scroll" id="details-title">Там, где решается впечатление.</h2>
+      </div>
+
+      <div class="details-track-wrap">
+        <div class="details-track" id="detailsTrack">
+          <figure class="detail-card" data-parallax="0.03">
+            <img class="macro-surface macro-surface--frame" src="img/6.png" alt="Титановая рамка смартфона, крупный план">
+            <figcaption class="detail-caption">Титановая рамка</figcaption>
+          </figure>
+          <figure class="detail-card" data-parallax="0.05">
+            <img class="macro-surface macro-surface--glass" src="img/7.png" alt="Прецизионное керамическое стекло экрана, крупный план">
+            <figcaption class="detail-caption">Прецизионное стекло</figcaption>
+          </figure>
+          <figure class="detail-card" data-parallax="0.03">
+            <img class="macro-surface macro-surface--camera" src="img/8.png" alt="Модуль профессиональной камеры смартфона, крупный план">
+            <figcaption class="detail-caption">Профессиональная камера</figcaption>
+          </figure>
+          <figure class="detail-card" data-parallax="0.05">
+            <img class="macro-surface macro-surface--button" src="img/9.png" alt="Прецизионные титановые кнопки смартфона, крупный план">
+            <figcaption class="detail-caption">Прецизионные кнопки</figcaption>
+          </figure>
+          <figure class="detail-card" data-parallax="0.03">
+            <img class="macro-surface macro-surface--micro" src="img/10.png" alt="Микротекстура керамической задней панели смартфона">
+            <figcaption class="detail-caption">Микротекстура поверхности</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05. ПОЧЕМУ ИМЕННО ЭТИ УСТРОЙСТВА ============ -->
+    <section class="trust" id="trust" aria-labelledby="trust-title">
+      <div class="section-inner">
+        <p class="section-label reveal-on-scroll">04 / Принципы отбора</p>
+        <h2 class="section-title reveal-on-scroll" id="trust-title">Почему именно эти устройства</h2>
+
+        <div class="trust-grid">
+          <div class="trust-card reveal-on-scroll">
+            <span class="trust-index" aria-hidden="true">01</span>
+            <h3 class="trust-name">Отбор</h3>
+            <p class="trust-desc">Мы не пытаемся показать всё. В коллекцию попадают только устройства, которые действительно заслуживают внимания.</p>
+          </div>
+          <div class="trust-card reveal-on-scroll">
+            <span class="trust-index" aria-hidden="true">02</span>
+            <h3 class="trust-name">Проверка</h3>
+            <p class="trust-desc">Перед передачей владельцу устройство проходит визуальную и техническую проверку.</p>
+          </div>
+          <div class="trust-card reveal-on-scroll">
+            <span class="trust-index" aria-hidden="true">03</span>
+            <h3 class="trust-name">Прозрачность</h3>
+            <p class="trust-desc">Состояние, комплектация и характеристики представлены без скрытых нюансов.</p>
+          </div>
+          <div class="trust-card reveal-on-scroll">
+            <span class="trust-index" aria-hidden="true">04</span>
+            <h3 class="trust-name">Консультация</h3>
+            <p class="trust-desc">Если несколько моделей выглядят одинаково привлекательными на бумаге, мы поможем понять разницу в реальном использовании.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06. ОПЫТ / ШОУРУМ ============ -->
+    <section class="experience" id="experience" aria-labelledby="experience-title">
+      <div class="section-inner experience-grid">
+        <div class="experience-text">
+          <p class="section-label section-label--light reveal-on-scroll">05 / Опыт</p>
+          <h2 class="section-title section-title--light reveal-on-scroll" id="experience-title">
+            Некоторые вещи невозможно выбрать по фотографии.
+          </h2>
+          <p class="experience-body reveal-on-scroll">
+            Свет, вес в руке, отклик экрана под пальцем — это опыт,
+            который начинается только при личном визите. Закрытый
+            showroom Titanium Atelier открыт по предварительной записи.
+          </p>
+          <a href="#booking" class="btn btn-primary magnetic-btn reveal-on-scroll">Запланировать просмотр</a>
+        </div>
+
+        <div class="experience-visual reveal-on-scroll parallax-el" data-parallax="0.06">
+          <figure class="macro-frame macro-frame--room" role="img"
+            aria-label="Атмосфера шоурума: стол, смартфон на подставке, мягкий направленный свет, силуэт человека, рассматривающего устройство">
+            <img class="macro-surface macro-surface--room" src="img/11.png" alt="Атмосфера шоурума: стол, смартфон на подставке, мягкий направленный свет, силуэт человека, рассматривающего устройство">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07. ВЛАДЕЛЬЦЫ ============ -->
+    <section class="owners" id="owners" aria-labelledby="owners-title">
+      <div class="section-inner">
+        <p class="section-label reveal-on-scroll">06 / Владельцы</p>
+        <h2 class="section-title reveal-on-scroll" id="owners-title">Голоса тех, кто уже выбрал</h2>
+
+        <div class="owners-list">
+          <article class="owner-quote reveal-on-scroll">
+            <blockquote>
+              <p>«Я выбирал не самый функциональный смартфон. Я выбирал тот, которым действительно хотелось пользоваться каждый день.»</p>
+            </blockquote>
+            <div class="owner-meta">
+              <div class="owner-photo">
+                <img class="macro-surface macro-surface--owner-1" src="img/12.png" alt="Александр К., владелец Meridian Pro 7">
+              </div>
+              <div class="owner-details">
+                <p class="owner-name">Александр&nbsp;К.</p>
+                <p class="owner-sub">Meridian Pro 7 · Москва · Март 2026</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="owner-quote reveal-on-scroll">
+            <blockquote>
+              <p>«Ожидал очередной обзор характеристик. Получил разговор о том, как устройство будет ощущаться в реальной жизни.»</p>
+            </blockquote>
+            <div class="owner-meta">
+              <div class="owner-photo">
+                <img class="macro-surface macro-surface--owner-2" src="img/13.png" alt="Мария В., владелица Arden Slate">
+              </div>
+              <div class="owner-details">
+                <p class="owner-name">Мария&nbsp;В.</p>
+                <p class="owner-sub">Arden Slate · Санкт-Петербург · Январь 2026</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="owner-quote reveal-on-scroll">
+            <blockquote>
+              <p>«Пришёл посмотреть один смартфон. Ушёл с пониманием, чем отличаются материалы, о которых раньше даже не задумывался.»</p>
+            </blockquote>
+            <div class="owner-meta">
+              <div class="owner-photo">
+                <img class="macro-surface macro-surface--owner-3" src="img/14.png" alt="Дмитрий Н., владелец Lumen Air">
+              </div>
+              <div class="owner-details">
+                <p class="owner-name">Дмитрий&nbsp;Н.</p>
+                <p class="owner-sub">Lumen Air · Казань · Декабрь 2025</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="owner-quote reveal-on-scroll">
+            <blockquote>
+              <p>«Консультация заняла сорок минут и была честнее, чем всё, что я читал о характеристиках устройства раньше.»</p>
+            </blockquote>
+            <div class="owner-meta">
+              <div class="owner-photo">
+                <img class="macro-surface macro-surface--owner-4" src="img/15.png" alt="Елена С., владелица Meridian Pro 7">
+              </div>
+              <div class="owner-details">
+                <p class="owner-name">Елена&nbsp;С.</p>
+                <p class="owner-sub">Meridian Pro 7 · Екатеринбург · Ноябрь 2025</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08. ФИНАЛЬНЫЙ CTA ============ -->
+    <section class="final-cta" id="contact" aria-labelledby="final-cta-title">
+      <div class="section-inner final-cta-inner">
+        <p class="section-label section-label--light reveal-on-scroll">07 / Следующий шаг</p>
+        <h2 class="final-cta-title reveal-on-scroll" id="final-cta-title">
+          Следующий смартфон должен быть<br>не просто новым.<br>
+          <span class="final-cta-accent">Он должен быть вашим.</span>
+        </h2>
+
+        <div class="final-cta-actions reveal-on-scroll">
+          <a href="#collection" class="btn btn-primary magnetic-btn">Выбрать устройство</a>
+          <a href="#booking" class="btn btn-outline btn-outline--light magnetic-btn">Поговорить с экспертом</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+
+    <div class="section-inner footer-form-wrap" id="booking">
+      <div class="footer-form-head">
+        <p class="section-label section-label--light">Записаться</p>
+        <h2 class="footer-form-title">Оставьте заявку —<br>эксперт свяжется с вами.</h2>
+      </div>
+
+      <form class="footer-form" id="bookingForm" novalidate>
+        <div class="footer-form-row">
+          <div class="footer-form-field">
+            <label for="bookingName">Имя</label>
+            <input type="text" id="bookingName" name="name" autocomplete="name" required placeholder="Как к вам обращаться">
+          </div>
+          <div class="footer-form-field">
+            <label for="bookingContact">Телефон или email</label>
+            <input type="text" id="bookingContact" name="contact" autocomplete="tel" required placeholder="+7 999 000-00-00">
+          </div>
+        </div>
+        <div class="footer-form-field">
+          <label for="bookingMessage">Комментарий <span class="footer-form-optional">(необязательно)</span></label>
+          <textarea id="bookingMessage" name="message" rows="2" placeholder="Например: интересует показ определённой модели"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary footer-form-submit">
+          <span class="footer-form-submit-label">Отправить заявку</span>
+        </button>
+
+        <p class="footer-form-status" id="bookingStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="26" height="26" rx="7" stroke="currentColor" stroke-width="1"/>
+            <rect x="9" y="9" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </span>
+        <span class="logo-text">Titanium&nbsp;Atelier</span>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Контакты</h3>
+        <ul class="footer-list">
+          <li><a href="mailto:consult@titanium-atelier.example">consult@titanium-atelier.example</a></li>
+          <li><a href="tel:+70000000000">+7&nbsp;(000)&nbsp;000-00-00</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Мессенджеры</h3>
+        <ul class="footer-list">
+          <li><a href="https://t.me/titaniumatelier" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li><a href="https://wa.me/70000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Соцсети</h3>
+        <ul class="footer-list">
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">VK</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Информация</h3>
+        <ul class="footer-list">
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Условия использования</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-inner footer-bottom">
+      <p>© 2026 Titanium Atelier. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="phone_store.js" defer></script>
+</body>
+</html>
